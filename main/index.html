@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Generator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Pixel Art Generator</h1>
+    <div id="container">
+        <div id="controls">
+            <input type="file" id="imageUpload" accept="image/jpeg, image/png">
+            <label for="pixelBoxSize">Pixel Box Size:</label>
+            <input type="number" id="pixelBoxSize" min="1" step="1">
+            <button id="generateButton">Generate Pixel Art</button>
+            <p id="imageDimensions"></p>
+        </div>
+        <div id="content">
+            <div id="pixelArtContainer"></div>
+            <div id="uploadedImageContainer"></div>
+        </div>
+    </div>
+    <a id="downloadLink" style="display: none;">Download Pixel Art</a>
+
+    <script src="./script.js"></script>
+</body>
+</html>
